@@ -7,15 +7,16 @@ module.exports = function(grunt){
                     yuicompress: true
                 },
                 files: {
-                    "./asset/main.css": "./asset/main.less"
+                    "./asset/main.css": "./asset/less/main.less"
                 }
             }
         },
         watch: {
-            files: "./assets/stylesheets/less/*",
+            files: "./asset/less/*",
             tasks: ["less"]
         }
     });
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.registerTask('default',['watch','less']);
 }
