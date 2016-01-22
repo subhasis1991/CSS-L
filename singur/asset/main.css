@@ -1,8 +1,71 @@
+body {
+  margin: 100px;
+}
 .radious {
   width: 200px;
   height: 200px;
   background: red;
-  border-radius: 100px;
+  border-radius: 3px;
   line-height: 200px;
   text-align: center;
+}
+.radious {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+.text-shadow {
+  font-size: 80px;
+  font-family: sans-serif;
+  text-align: center;
+  text-shadow: 0px 1px 0px white;
+}
+.gradient {
+  margin: 400px;
+  height: 200px;
+  margin: auto;
+  background: black;
+  background: -webkit-linear-gradient(top, red 50%, green 50%);
+}
+.box1 {
+  box-sizing: padding-box;
+  background: #a1a1a1;
+  border: 10px solid black;
+  padding: 10px;
+  height: 100px;
+  width: 150px;
+}
+.width {
+  height: 100px;
+}
+li:after {
+  content: "";
+  display: block;
+  clear: both;
+  width: 10px;
+  background: red;
+}
+.btn {
+  font-family: Georgia, serif;
+  list-style-type: none;
+  float: left;
+  background: white;
+  margin-left: 10px;
+  border-radius: 2px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.4);
+  -webkit-transition: box-shadow 2s;
+  cursor: pointer;
+}
+.btn-sm {
+  height: 10px;
+  padding: 10px;
+  line-height: 10px;
+}
+.btn-sm:hover {
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5), 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+  -webkit-transition: box-shadow 1.5s;
+}
+.btn-xs {
+  height: 7px;
+  padding: 7px;
+  line-height: 10px;
+  font-size: 12px;
 }
